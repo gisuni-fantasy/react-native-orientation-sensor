@@ -1,8 +1,8 @@
 
 {
-  "name": "react-native-orientation",
+  "name": "react-native-orientation-sensor",
   "version": "1.0.0",
-  "description": "",
+  "description": "react native native module for orientation sensor",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
   "keywords": [
     "react-native"
   ],
-  "author": "",
+  "author": "695954085@qq.com",
   "license": "",
   "peerDependencies": {
     "react-native": "^0.41.2"
