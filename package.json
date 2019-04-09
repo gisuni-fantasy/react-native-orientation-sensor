@@ -1,4 +1,3 @@
-
 {
   "name": "react-native-orientation-sensor",
   "version": "1.0.0",
@@ -10,9 +9,16 @@
   "keywords": [
     "react-native"
   ],
-  "author": "695954085@qq.com",
+  "author": {
+    "name": "xiachiquan",
+    "email": "695954085@qq.com"
+  },
   "license": "",
   "peerDependencies": {
     "react-native": "^0.41.2"
+  },
+  "repository": "https://github.com/695954085/react-native-orientation-sensor.git",
+  "dependencies": {
+    "rxjs": "^6.4.0"
   }
 }
