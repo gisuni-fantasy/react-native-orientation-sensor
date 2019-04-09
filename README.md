@@ -1,13 +1,17 @@
 
-# react-native-orientation
+# react-native-orientation-sensor
+
+## Introduction
+
+This is a react-native native library, the library is only available for android. We can get the direction data.
 
 ## Getting started
 
-`$ npm install react-native-orientation --save`
+`$ npm install react-native-orientation-sensor --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-orientation`
+`$ react-native link react-native-orientation-sensor`
 
 ### Manual installation
 
@@ -15,7 +19,7 @@
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-orientation` and add `RNOrientation.xcodeproj`
+2. Go to `node_modules` ➜ `react-native-orientation-sensor` and add `RNOrientation.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNOrientation.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
@@ -26,18 +30,18 @@
   - Add `new RNOrientationPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-orientation'
-  	project(':react-native-orientation').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-orientation/android')
+  	include ':react-native-orientation-sensor'
+  	project(':react-native-orientation-sensor').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-orientation-sensor/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-orientation')
+      compile project(':react-native-orientation-sensor')
   	```
 
 
 ## Usage
 ```javascript
-import RNOrientation from 'react-native-orientation';
+import RNOrientation from 'react-native-orientation-sensor';
 
 // TODO: What to do with the module?
 RNOrientation;
