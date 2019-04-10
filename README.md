@@ -41,9 +41,17 @@ This is a react-native native library, the library is only available for android
 
 ## Usage
 ```javascript
-import RNOrientation from 'react-native-orientation-sensor';
+import orientationObservable from 'react-native-orientation-sensor';
 
-// TODO: What to do with the module?
-RNOrientation;
+// TODO: orientationObservable is Rxjs.Observable
+// degree is direction angle
+const subscribtion = orientationObservable.subscribe(
+  // angle range [-180, 180]
+  degree => console.log(degree)
+)
+
+setTimeout(() => {
+  subscribtion.unsubscribe()
+}, 1000)
 ```
   

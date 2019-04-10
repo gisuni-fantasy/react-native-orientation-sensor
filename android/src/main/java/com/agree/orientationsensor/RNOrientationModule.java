@@ -100,8 +100,8 @@ public class RNOrientationModule extends ReactContextBaseJavaModule implements S
         if (event.sensor.getType() == Sensor.TYPE_MAGNETIC_FIELD) {
             magneticFieldValues = event.values;
         }
-        float azimuthAngle = calculateOrientation();
-        sendEvent("azimuthAngle", azimuthAngle);
+        float angle = calculateOrientation();
+        sendEvent("RNOrientation", angle);
     }
 
     @Override

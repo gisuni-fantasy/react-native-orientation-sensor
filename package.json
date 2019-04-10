@@ -1,6 +1,6 @@
 {
   "name": "react-native-orientation-sensor",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "react native native module for orientation sensor",
   "main": "index.js",
   "scripts": {
