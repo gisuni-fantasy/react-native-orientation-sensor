@@ -49,6 +49,9 @@ public class RNOrientationModule extends ReactContextBaseJavaModule implements S
         values[2] = (float) Math.toDegrees(values[2]);
         // 修正当设备竖直超过90度或横屏时的方向
         values[0]=values[0]-values[2];
+        if(values[0]>180){
+            values[0]=values[0]-360;
+        }
         Log.i(TAG, values[0] + "");
         return values[0];
     }
