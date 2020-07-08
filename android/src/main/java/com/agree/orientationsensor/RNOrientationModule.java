@@ -45,6 +45,10 @@ public class RNOrientationModule extends ReactContextBaseJavaModule implements S
         SensorManager.getRotationMatrix(R, null, accelerometerValues, magneticFieldValues);
         SensorManager.getOrientation(R, values);
         values[0] = (float) Math.toDegrees(values[0]);
+        values[1] = (float) Math.toDegrees(values[1]);
+        values[2] = (float) Math.toDegrees(values[2]);
+        // 修正当设备竖直超过90度或横屏时的方向
+        values[0]=values[0]-values[2];
         Log.i(TAG, values[0] + "");
         return values[0];
     }
